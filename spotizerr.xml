@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Maintainer>
+  <Icon>https://avatars.githubusercontent.com/u/93692082?v=4</Icon>
+  <Profile>Author of Spotizerr</Profile>
+  <Forum>https://www.reddit.com/r/selfhosted/comments/1ibenuw/from_the_creators_of_zotifarrr_presenting</Forum>
+</Maintainer>
+<Container version="2">
+  <Name>spotizerr</Name>
+  <Repository>cooldockerizer93/spotizerr</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/185910-support-xoconoch-spotizerr/</Support>
+  <Project>https://github.com/Xoconoch/spotizerr</Project>
+  <Overview>Music downloader which combines the best of two worlds: Spotify's catalog and Deezer's quality.</Overview>
+  <Category>Downloaders:</Category>
+  <WebUI>http://[IP]:[PORT:7171]</WebUI>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1738016028</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>Visit the repo for basic setup guide: https://github.com/Xoconoch/spotizerr&#xD;
+&#xD;
+NOTE - this container has to run with the root user due to a permissions bug. Once resolved, it is recommended to add "--user 99:100" to "Extra Parameters".</Requires>
+  <Config Name="Path to /creds" Target="/app/creds" Default="/mnt/user/appdata/spotizerr/creds" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/spotizerr/creds</Config>
+  <Config Name="Path to /music" Target="/app/downloads" Default="/mnt/user/data/media/music/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/media/music/</Config>
+  <Config Name="WebUI Port" Target="7171" Default="7171" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7171</Config>
+  <TailscaleStateDir/>
+</Container>

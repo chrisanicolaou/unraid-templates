@@ -1,1 +1,1 @@
-# spotizerr-template
+# unraid-templates
