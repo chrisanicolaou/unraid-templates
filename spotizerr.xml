@@ -25,11 +25,11 @@
   <DateInstalled>1738016028</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires>Visit the repo for basic setup guide: https://github.com/Xoconoch/spotizerr&#xD;
-&#xD;
-NOTE - this container has to run with the root user due to a permissions bug. Once resolved, it is recommended to add "--user 99:100" to "Extra Parameters".</Requires>
+  <Requires>Visit the repo for basic setup guide: https://github.com/Xoconoch/spotizerr</Requires>
   <Config Name="Path to /creds" Target="/app/creds" Default="/mnt/user/appdata/spotizerr/creds" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/spotizerr/creds</Config>
   <Config Name="Path to /music" Target="/app/downloads" Default="/mnt/user/data/media/music/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data/media/music/</Config>
   <Config Name="WebUI Port" Target="7171" Default="7171" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7171</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <TailscaleStateDir/>
 </Container>
